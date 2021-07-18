@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styli.css">
     <title>goit-markup-hw-01</title>
 </head>
 <body>
     <header>
+        <a class="logo link" href="#"><span class="logo-left">Web</span>Studio </a>
         <nav>
-            <a href="#"> WebStudio </a>
-            <ul>
-                <li class="quality-title"><a href="#">Студия</a></li>
-                <li class="quality-title"><a href="#">Портфолио</a></li>
-                <li class="quality-title"><a href="#">Контакты</a></li>
-            </ul>
-            <ul>
-                <li class="quality-content"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="quality-content"><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+            <ul class="nav-link">
+                <li ><a class="link" href="#">Студия</a></li>
+                <li ><a class="link" href="#">Портфолио</a></li>
+                <li ><a class="link" href="#">Контакты</a></li>
             </ul>
         </nav>
+        <ul class="contakt-link">
+            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+        </ul>
     </header>
     <main>
     <div>
-        <section>
+        <section class="section-main">
             <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-            <a class="title-link" href="#">Заказать услугу</a>
+            <button  type="button" class="primary-button">Заказать услугу</button>
         </section>
     </div>
-    <section class="quality-sektion">
+    <section class="quality-section">
         <ul>
             <li class="quality"> 
                 <h3 class="quality-title">Внимание к деталям</h3> 
@@ -50,41 +53,43 @@
         </ul>
     </section>
     <section>
-        <h2 class="heading-of-paragraphs">Чем мы занимаемся</h2>
+        <h2 class="title-secondary">Чем мы занимаемся</h2>
         <ul>
             <li><img src="./images/img 1.jpg" alt="foto 1" width="370"></li>
             <li><img src="./images/img 2.jpg" alt="foto 2" width="370"></li>
             <li><img src="./images/img 3.jpg" alt="foto 3" width="370"></li>
         </ul>
     </section>
-    <section>
-        <h2 class="heading-of-paragraphs">Наша команда</h2>
+    <section class="section-specialists">
+        <h2 class="title-secondary">Наша команда</h2>
         <ul>
             <li><img src="./images/Игорь Демьяненко.jpg" alt="Игорь Демьяненко" width="270">
-                <p class="quality-title">Игорь Демьяненко</p>
-                <p class="quality-content">Product Designer</p>  
+                <p class="title-specialists">Игорь Демьяненко</p>
+                <p class="title-secondary-specialists">Product Designer</p>  
             </li>
             <li><img src="./images/Ольга Репина.jpg" alt="Ольга Репина"  width="270">
-                <p class="quality-title">Ольга Репина</p>
-                <p class="quality-content">Frontend Developer</p> 
+                <p class="title-specialists">Ольга Репина</p>
+                <p class="title-secondary-specialists">Frontend Developer</p> 
             </li>
             <li><img src="./images/Николай Тарасов.jpg" alt="Николай Тарасов" width="270">
-                <p class="quality-title">Николай Тарасов</p>
-                <p class="quality-content">Marketing</p>
+                <p class="title-specialists">Николай Тарасов</p>
+                <p class="title-secondary-specialists">Marketing</p>
             </li>
             <li><img src="./images/Михаил Ермаков.jpg" alt="Михаил Ермаков" width="270">
-                <p class="quality-title">Михаил Ермаков</p>
-                <p class="quality-content">UI Designer</p>
+                <p class="title-specialists">Михаил Ермаков</p>
+                <p class="title-secondary-specialists">UI Designer</p>
             </li>
         </ul>
     </section>
     </main>
     <footer>
-         <address>
-            <li> <a href="#">WebStudio</a></li>
-            <li class="title-address">г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="bottom link"><a href="mailto:info@example.com">info@example.com</a></li>
-            <li class="bottom-link"><a href="tel:+38 099 111 11 11">+38 099 111 11 11</a></li>
+        <a class="logo bottom link" href="#"><span class="logo-left">Web</span>Studio </a>
+         <address class="bottom">
+             <ul>
+                <li><a class="title-address link" href="#"> г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li><a class="bottom-link link" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="bottom-link link" href="tel:+38 099 111 11 11">+38 099 111 11 11</a></li>
+            </ul>
          </address>
     </footer>
 

@@ -1,0 +1,187 @@
+/*color main  #757575*/
+/*color secondary #212121*/
+/*title #FFFFFF*/
+/*color logo #2196F3 and #FFFFFF*/
+/* color bottom link rgba(255, 255, 255, 0.6);*/
+/*background #E5E5E5*/
+/*background secondary #F5F4FA*/
+/*background top line #FFFFFF*/
+/*background bottom link and main tiotli #2F303A*/
+:root{
+    --primary-text-color    :#757575; 
+    --title-text-color      :#212121;
+    --accent-color          :#2196F3;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color:#E5E5E5 ;
+    color:var(--primary-text-color);
+}
+/*шапка*/
+.logo {
+    color:#000000;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+.logo-left{
+    color: var(--accent-color);
+}
+.nav-link{
+    color: var(--title-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+.nav-link .link:hover,
+.nav-link .link:focus {
+    color: var(--accent-color);
+}
+.contakt-link{
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+.contakt-link .link:hover,
+.contakt-link .link:focus {
+    color: var(--accent-color);
+}
+.link {
+    text-decoration: none;
+}
+/*главное заглавие*/
+.main-title{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+} 
+.primary-button {
+    color: #FFFFFF;
+    background-color: #2196F3;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}  
+/*раздел качества*/
+ .quality-title{
+    color: var(--title-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+ }
+.quality-content{
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+.title-secondary{
+    color: var(--title-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.title-specialists{
+    color: var(--title-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.title-secondary-specialists{
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.section-specialists{
+    background-color: #F5F4FA;
+}
+.section-main,
+.bottom{
+    background-color: #2F303A;
+}
+.title-address{ 
+    color: #FFFFFF;
+}
+
+.bottom-link{
+    color: rgba(255, 255, 255, 0.6);
+}
+/*потфолио*/
+.primary-buttons{
+    color: var(--title-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.primary-buttons:hover{
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+
+.title-links{
+    color:  var(--title-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+.context-links{
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+
+
