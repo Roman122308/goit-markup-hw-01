@@ -1,5 +1,5 @@
 
-:root{
+:root {
     --primary-text-color        :#757575; 
     --title-text-color          :#212121;
     --accent-color              :#2196F3;
@@ -11,11 +11,15 @@
     --fill-color                :#2F303A;
 }
 body {
-    font-family: 'Roboto', 'Arial' sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     background-color:var(--background-color);
     color:var(--primary-text-color);
+    margin: 0;
 }
 /*шапка*/
+ul  {
+    list-style: none;
+}
 .logo {
     color:var(--logo-color);
     font-family:'Raleway', sans-serif; 
@@ -24,10 +28,10 @@ body {
     line-height: 31px;
     letter-spacing: 0.03em;
 }
-.logo-left{
+.logo-left {
     color: var(--accent-color);
 }
-.nav-link{
+.nav-link a {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -38,7 +42,7 @@ body {
 .nav-link .link:focus {
     color: var(--accent-color);
 }
-.contact-link{
+.contact-link .link {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -53,7 +57,7 @@ body {
     text-decoration: none;
 }
 /*главное заглавие*/
-.main-title{
+.main-title {
     color: var(--secondary-color);
     font-weight: 900;
     font-size: 44px;
@@ -74,7 +78,7 @@ body {
     letter-spacing: 0.06em;
 }  
 /*раздел качества*/
- .quality-title{
+ .quality-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -82,14 +86,14 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
  }
-.quality-content{
+.quality-content {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
 }
-.title-secondary{
+.title-secondary {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -97,7 +101,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
-.team-user-name{
+.team-user-name {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -105,7 +109,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
-.team-user-name-position{
+.team-user-name-position {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -113,22 +117,22 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
-.section-specialists{
+.section-user {
     background-color: var(--secondary-background-color);
 }
 .section-main,
-.bottom{
+.section-bottom {
     background-color: var(--fill-color);
 }
-.title-address{ 
+.title-address { 
     color: var(--secondary-color);
 }
 
-.bottom-link{
+.bottom-link {
     color: var(--transparen-color);
 }
 /*потфолио*/
-.primary-buttons{
+.secondary-button {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -136,19 +140,19 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
-.primary-buttons:hover{
+.secondary-button:hover {
     color: var(--secondary-color);
     background-color: var(--accent-color);
 }
 
-.title-links{
+.title-portfolio {
     color:  var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
 }
-.context-links{
+.context-portfolio {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
