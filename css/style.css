@@ -49,6 +49,16 @@ ul  {
 .nav-list .nav-link:focus {
     color: var(--accent-color);
 }
+.info-link:hover,
+.info-link:focus {
+    color: var(--accent-color);
+}
+.info-link{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
 .contact-link .link {
     color: var(--primary-text-color);
     font-weight: 500;
