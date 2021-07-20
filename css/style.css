@@ -1,14 +1,14 @@
 
 :root {
-    --primary-text-color        :#757575; 
-    --title-text-color          :#212121;
-    --accent-color              :#2196F3;
-    --logo-color                :#000000;
-    --background-color          :#E5E5E5;
-    --secondary-color           :#FFFFFF;
+    --primary-text-color:#757575; 
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --logo-color:#000000;
+    --background-color:#E5E5E5;
+    --secondary-color:#FFFFFF;
     --secondary-background-color:#F5F4FA;
-    --transparen-color          :rgba(255, 255, 255, 0.6);
-    --fill-color                :#2F303A;
+    --transparen-color:rgba(255, 255, 255, 0.6);
+    --fill-color:#2F303A;
 }
 body {
     font-family: 'Roboto', 'Arial', sans-serif;
@@ -19,6 +19,9 @@ body {
 /*шапка*/
 ul  {
     list-style: none;
+}
+.active {
+    color: var(--accent-color);
 }
 .logo {
     color:var(--logo-color);
@@ -31,15 +34,15 @@ ul  {
 .logo-left {
     color: var(--accent-color);
 }
-.nav-link a {
+.nav-link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 }
-.nav-link .link:hover,
-.nav-link .link:focus {
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus {
     color: var(--accent-color);
 }
 .contact-link .link {
@@ -109,7 +112,7 @@ ul  {
     text-align: center;
     letter-spacing: 0.03em;
 }
-.team-user-name-position {
+.team-user-position {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
