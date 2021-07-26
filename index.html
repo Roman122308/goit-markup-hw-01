@@ -7,92 +7,126 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>goit-markup-hw-01</title>
 </head>
 <body>
-    <header>
-        <a class="logo link" href="#"><span class="logo-left">Web</span>Studio </a>
-        <nav>
-            <ul class="nav-list">
-                <li ><a class="active link" href="./index.html">Студия</a></li>
-                <li ><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
-                <li ><a class="nav-link link" href="#">Контакты</a></li>
+    <header class="header">
+        <div class="container header-container">
+            <nav class="nav">
+                <a class="logo link" href="index.html"><span class="logo-left">Web</span>Studio </a>
+                <ul class="nav-list list">
+                    <li class="menu-item">
+                        <a class="active link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="nav-link link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contact-link">
+                <li class="contact-mail-phone">
+                    <a class="contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="contact-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
-        </nav>
-        <ul class="contact-link">
-            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
-    <div>
         <section class="section-main">
-            <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-            <button  type="button" class="primary-button">Заказать услугу</button>
+                <h1 class="main-title">Эффективные решения <br /> для вашего бизнеса</h1>
+                <button  type="button" class="primary-button">Заказать услугу</button>
         </section>
-    </div>
-    <section class="quality-section">
-        <ul>
-            <li class="quality"> 
-                <h3 class="quality-title">Внимание к деталям</h3> 
-                <p class="quality-content">Идейные соображения, а также начало повседневной работы по формированию позиции.</p> 
-            </li>
-            <li class="quality">
-                <h3 class="quality-title">Пунктуальность</h3> 
-                <p class="quality-content">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p> 
-            </li>
-            <li class="quality">
-                <h3 class="quality-title">Планирование</h3>
-                <p class="quality-content">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-            </li>
-            <li class="quality">
-                <h3 class="quality-title">Современные технологии</h3>
-                <p class="quality-content">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2 class="title-secondary">Чем мы занимаемся</h2>
-        <ul>
-            <li><img src="./images/img 1.jpg" alt="foto 1" width="370"></li>
-            <li><img src="./images/img 2.jpg" alt="foto 2" width="370"></li>
-            <li><img src="./images/img 3.jpg" alt="foto 3" width="370"></li>
-        </ul>
-    </section>
-    <section class="section-user">
-        <h2 class="title-secondary">Наша команда</h2>
-        <ul>
-            <li><img src="./images/Игорь Демьяненко.jpg" alt="Игорь Демьяненко" width="270">
-                <p class="team-user-name">Игорь Демьяненко</p>
-                <p class="team-user-position">Product Designer</p>  
-            </li>
-            <li><img src="./images/Ольга Репина.jpg" alt="Ольга Репина"  width="270">
-                <p class="team-user-name">Ольга Репина</p>
-                <p class="team-user-position">Frontend Developer</p> 
-            </li>
-            <li><img src="./images/Николай Тарасов.jpg" alt="Николай Тарасов" width="270">
-                <p class="team-user-name">Николай Тарасов</p>
-                <p class="team-user-position">Marketing</p>
-            </li>
-            <li><img src="./images/Михаил Ермаков.jpg" alt="Михаил Ермаков" width="270">
-                <p class="team-user-name">Михаил Ермаков</p>
-                <p class="team-user-position">UI Designer</p>
-            </li>
-        </ul>
-    </section>
+        <section>
+            <div class="container">
+                <h2 class="visually-hidden">Описание секции</h2>
+                <ul class="quality-section list">
+                    <li class="quality"> 
+                        <h3 class="quality-title">Внимание к деталям</h3> 
+                        <p class="quality-content">Идейные соображения, а также начало повседневной работы по формированию позиции.</p> 
+                    </li>
+                    <li class="quality">
+                        <h3 class="quality-title">Пунктуальность</h3> 
+                        <p class="quality-content">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p> 
+                    </li>
+                    <li class="quality">
+                        <h3 class="quality-title">Планирование</h3>
+                        <p class="quality-content">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="quality">
+                        <h3 class="quality-title">Современные технологии</h3>
+                        <p class="quality-content">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container section">
+                <h2 class="title-secondary">Чем мы занимаемся</h2>
+                <ul class="work-list list">
+                    <li class="work-list-item">
+                        <img src="./images/img1.jpg" alt="foto 1" width="370">
+                    </li>
+                    <li class="work-list-item">
+                        <img src="./images/img2.jpg" alt="foto 2" width="370">
+                    </li>
+                    <li class="work-list-item">
+                        <img src="./images/img3.jpg" alt="foto 3" width="370">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section-user section">
+            <div class="container">
+                <h2 class="title-secondary">Наша команда</h2>
+                <ul class="list our-team">
+                    <li class="list-our-team">
+                        <img src="./images/ИгорьДемьяненко.jpg" alt="Игорь Демьяненко" width="270">
+                        <p class="team-user-name">Игорь Демьяненко</p>
+                        <p class="team-user-position">Product Designer</p>  
+                    </li>
+                    <li class="list-our-team">
+                        <img src="./images/ОльгаРепина.jpg" alt="Ольга Репина"  width="270">
+                        <p class="team-user-name">Ольга Репина</p>
+                        <p class="team-user-position">Frontend Developer</p> 
+                    </li>
+                    <li class="list-our-team">
+                        <img src="./images/НиколайТарасов.jpg" alt="Николай Тарасов" width="270">
+                        <p class="team-user-name">Николай Тарасов</p>
+                        <p class="team-user-position">Marketing</p>
+                    </li>
+                    <li class="list-our-team">
+                        <img src="./images/МихаилЕрмаков.jpg" alt="Михаил Ермаков" width="270">
+                        <p class="team-user-name">Михаил Ермаков</p>
+                        <p class="team-user-position">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer>
-        <section class="section-bottom">
-        <a class="logo bottom link" href="#"><span class="logo-left">Web</span>Studio </a>
-         <address class="bottom">
-             <ul>
-                <li><a class="title-address link info-link" href="#"> г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a class="bottom-link link info-link" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="bottom-link link info-link" href="tel:+38 099 111 11 11">+38 099 111 11 11</a></li>
-            </ul>
-         </address>
-        </section>
+    <footer class="footer">
+        <div class="container footer-container">
+            <a class="footer-logo bottom link" href="#"><span class="logo-left">Web</span>Studio </a>
+            <address>
+                <ul class="bottom-address">
+                    <li class="address-item">
+                        <a class="title-address link info-link" href="#"> г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="address-item">
+                        <a class="bottom-link link info-link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="address-item">
+                        <a class="bottom-link link info-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 
 </body>
