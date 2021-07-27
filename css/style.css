@@ -300,34 +300,76 @@ ul  {
 
 
 
-                                                                    /*потфолио*/
+                                    /*потфолио*/
+
+                                    /*ссылки*/
+.navigation-buttons {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 94px;
+    justify-content: center;
+}
+.button-list:not(:last-child) {
+    margin-right: 8px;
+}
 .secondary-button {
+    background-color: var(--secondary-background-color);
     color: var(--title-text-color);
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    letter-spacing: 0.03em;
-
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 0;
+    letter-spacing: 0.06em;
 }
-.secondary-button:hover {
+.secondary-button:hover,
+.secondary-button:focus {
     color: var(--secondary-color);
     background-color: var(--accent-color);
 }
+                                        /*Портфолио*/
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.link-pictures {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+    background: var(-secondary-color);
+}
+
+.card-content {
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
 .title-portfolio {
     color:  var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
+    padding-top: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 .context-portfolio {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
+    line-height: 1.87;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
 }
-
-
+.indent {
+  padding-bottom: 94px;
+}
