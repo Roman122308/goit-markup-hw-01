@@ -54,7 +54,7 @@ ul {
     padding-right: 15px;
     margin: 0 auto;
 }
-                                                                    /*Шапка*/
+                                                    /*Шапка*/
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -76,11 +76,13 @@ ul {
 .contact-link {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 .menu-item:not(:last-child) {
     margin-right: 50px;
 }
-.nav .logo {
+.header-container .logo,
+.footer-logo {
     color: var(--logo-color);
     font-family: 'Raleway' , sans-serif;
     font-weight: 700;
@@ -88,13 +90,14 @@ ul {
     line-height: 1.2;
     margin-right: 93px;
 }
+
 .logo-left {
     color: var(--accent-color);
 }
 .contact-mail-phone {
     margin-right: 50px;
 }
-                                                        /*основнвя секция*/
+                                               /*основнвя секция*/
  
 .section-main {
     background-color: var(--fill-color);
@@ -115,7 +118,7 @@ ul {
     border-radius: 4px;
     border: 0;
     background-color: var(--accent-color);
-    color: var(--title-text-color);
+    color: var(--secondary-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -127,9 +130,10 @@ ul {
 .section-main .primary-button:hover,
 .section-main .primary-button:focus {
     background-color: var(--button-hover-focus);
-    color: var(--secondary-color);
+    color: var(--title-text-color);
+    
 }
-                                                         /*секция основные качества*/
+                                                 /*секция основные качества*/
 
 .visually-hidden:not(:focus):not(:active) {
     width: 1px;
@@ -145,9 +149,11 @@ ul {
 .quality-section {
     display: flex;
     padding-top: 94px;
+    justify-content: space-between;
 }
-.quality:not(:last-child) {
-    margin-right: 30px;
+.quality {
+    width: 270px;
+    padding-right: 12px;
 }
 .quality-title {
     color: var(--title-text-color);
@@ -163,16 +169,14 @@ ul {
      font-size: 14px;
      line-height: 1.71;
 }
-                                                            /*секция чем мы занимаемся*/
+                                             /*секция чем мы занимаемся*/
 .work-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
+    justify-content: space-between;
+    
 }
 .work-list-item {
-    margin-left: 30px;
-    margin-top: 30px;
     flex-basis: calc((100% - 90px) / 3);
 }
 
@@ -184,7 +188,7 @@ ul {
     text-align: center;
     margin-bottom: 50px;
 }
-                                                                      /*наша команда*/
+                                                     /*наша команда*/
 
 .section-user {
     background-color: var(--secondary-background-color);
@@ -200,8 +204,6 @@ ul {
     margin-bottom: 10px
 }
 .list-our-team {
-    margin-left: 30px;
-    margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -209,8 +211,7 @@ ul {
 }
 .our-team {
     display: flex;
-    margin-left: -30px;
-    margin-top: -30px;
+    justify-content: space-between;
 }
 .section-user .team-user-position {
     font-size: 16px;
@@ -222,23 +223,14 @@ ul {
 .our-team .team-user-position {
     margin-bottom: 30px;
 }
-                                                                /*нижний колонтитул*/
+                                              /*нижний колонтитул*/
 
 .footer {
   background-color: var(--fill-color);
+  padding: 60px 0;
 }
 .footer-container {
     padding-bottom: 60px;
-}
-.footer-logo {
-    display: flex;
-    font-family: 'Raleway' , sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    display: inline-block;
-    margin-top: 60px;
 }
 .address-item:not(:last-child) {
     margin-bottom: 9px;
@@ -247,12 +239,16 @@ ul {
 .footer-logo { 
     color: var(--secondary-color);
 }
-
+.address {
+    margin-top: 20px;
+}
 .bottom-link {
     color: var(--transparen-color);
 }
-
-/*шапка*/
+.bottom-address {
+    font-style:normal;
+}
+                    /*шапка*/
 ul  {
     list-style: none;
 }
@@ -330,6 +326,8 @@ ul  {
 .secondary-button:focus {
     color: var(--secondary-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
                                         /*Портфолио*/
 
@@ -350,6 +348,7 @@ ul  {
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    padding: 20px 24px;
 }
 .title-portfolio {
     color:  var(--title-text-color);
