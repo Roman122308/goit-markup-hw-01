@@ -56,8 +56,7 @@ ul {
 }
                                                     /*Шапка*/
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 24px 0;
     border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -102,8 +101,7 @@ ul {
 .section-main {
     background-color: var(--fill-color);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 200px 0;
 }
 .section-main .main-title {
     color: var(--secondary-color);
@@ -130,7 +128,7 @@ ul {
 .section-main .primary-button:hover,
 .section-main .primary-button:focus {
     background-color: var(--button-hover-focus);
-    color: var(--title-text-color);
+    color: var(--secondary-color);
     
 }
                                                  /*секция основные качества*/
@@ -146,14 +144,16 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.section-container {
+    padding: 94px 0 47px;
+
+}
 .quality-section {
     display: flex;
-    padding-top: 94px;
     justify-content: space-between;
 }
 .quality {
     width: 270px;
-    padding-right: 12px;
 }
 .quality-title {
     color: var(--title-text-color);
@@ -204,7 +204,6 @@ ul {
     margin-bottom: 10px
 }
 .list-our-team {
-    flex-basis: calc((100% - 120px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -229,9 +228,7 @@ ul {
   background-color: var(--fill-color);
   padding: 60px 0;
 }
-.footer-container {
-    padding-bottom: 60px;
-}
+
 .address-item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -334,20 +331,22 @@ ul  {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
 }
-.link-pictures {
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 90px) / 3);
+.portfolio-list-aytom {
     background: var(-secondary-color);
 }
 
+.portfolio-list-aytom:not(:nth-child(-n+3)) {
+    margin-top: 30px;
+}
+.portfolio-list-aytom:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+
 .card-content {
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
+    border: 1px solid #eeeeee;
+    border-top: none;
     padding: 20px 24px;
 }
 .title-portfolio {
@@ -356,18 +355,12 @@ ul  {
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    padding-top: 30px;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 .context-portfolio {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 20px;
 }
 .indent {
   padding-bottom: 94px;
