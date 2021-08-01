@@ -10,6 +10,7 @@
     --transparen-color:rgba(255, 255, 255, 0.6);
     --fill-color:#2F303A;
     --button-hover-focus: #188ce8;
+    --one-time-color: #ececec;
 }
                                                             /*послядние изменения*/
 body {
@@ -25,56 +26,46 @@ h4,
 h5,
 h6,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 .link {
     text-decoration: none;
 }
-.list {
+ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-}
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
 }
 .container {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     margin: 0 auto;
 }
                                                     /*Шапка*/
 .header {
     padding: 24px 0;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid var( --one-time-color);
 }
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav {
-    display: flex;
-    align-items: center;
-}
+.nav,
+.contacts-list,
 .nav-list {
     display: flex;
     align-items: center;
 }
-.contact-link {
-    display: flex;
-    align-items: center;
+.contacts-list {
     margin-left: auto;
 }
 .menu-item:not(:last-child) {
@@ -93,7 +84,7 @@ ul {
 .logo-left {
     color: var(--accent-color);
 }
-.contact-mail-phone {
+.contact-aytom {
     margin-right: 50px;
 }
                                                /*основнвя секция*/
@@ -200,8 +191,7 @@ ul {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px
+    margin: 30px 0 10px;
 }
 .list-our-team {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -273,23 +263,22 @@ ul  {
     color: var(--accent-color);
 }
 .info-link{
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
 }
-.contact-link .link {
+.contacts-list .link {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 }
-.contact-link .link:hover,
-.contact-link .link:focus {
+.contacts-list .link:hover,
+.contacts-list .link:focus {
     color: var(--accent-color);
 }
-
 
 
 
@@ -327,7 +316,6 @@ ul  {
     border-radius: 4px;
 }
                                         /*Портфолио*/
-
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
