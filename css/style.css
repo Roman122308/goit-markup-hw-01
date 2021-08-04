@@ -60,8 +60,7 @@ ul {
     justify-content: space-between;
 }
 .nav {
-    padding-left: 93px;
-
+    margin: 93px;
 }
 .nav,
 .contacts-list,
@@ -96,6 +95,12 @@ ul {
     background-color: var(--fill-color);
     text-align: center;
     padding: 200px 0;
+    max-width: 1600px;
+    height: 600px;
+    background-image: url(..//images/BgSt.jpg);
+    background-position: center;
+    background-size: auto;
+    margin: auto;
 }
 .main-title {
     color: var(--secondary-color);
@@ -139,8 +144,7 @@ ul {
     overflow: hidden;
 }
 .section-container {
-    padding: 94px 0 47px;
-
+    padding: 47px 0 94px;
 }
 .quality-section {
     display: flex;
