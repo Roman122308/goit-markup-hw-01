@@ -11,6 +11,7 @@
     --fill-color:#2F303A;
     --button-hover-focus: #188ce8;
     --one-time-color: #ececec;
+    --icon-fill: #afb1b8;
 }
                                                             /*послядние изменения*/
 body {
@@ -60,14 +61,92 @@ ul {
     justify-content: space-between;
 }
 .nav {
-    margin: 93px;
+    margin: 32px 0 32px 93px;
 }
+
+
+.mailphon-icon {
+    fill: var(--primary-text-color);
+    margin-right: 10px;
+}
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.mailphon-icon:hover,
+.mailphon-icon:focus {
+    fill: var(--accent-color);
+}
+.contact-link {
+    padding: 0;
+    border: none;
+}
+.iconsection-list-icon {
+    width: 70px;
+    height: 70px;
+    fill: #afb1b8;
+}
+.iconsection-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 94px;
+    margin-bottom: 30px;
+}
+.iconsection-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--secondary-background-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+
+
+/*.phon,
+.contact-link {
+    display: flex;
+    align-items: center;
+    color: currentColor;
+    text-decoration: none;
+    font-size: 32px;
+    background-size: contain;
+}
+.contact-link::before {
+    margin-right: 16px;
+    background-image:url(../svg/envelope.svg);
+    content: "";
+    width: 16px;
+    height: 12px;
+    
+}
+.phon::before {
+    margin-right: 16px;
+    background-image:url(../svg/Vector.svg);
+    content: "";
+    width: 10px;
+    height: 16px;  
+}
+*/
+
+
+
+
+
+
+
+
 .nav,
 .contacts-list,
 .nav-list {
     display: flex;
     align-items: center;
 }
+
 .contacts-list {
     margin-left: auto;
 }
@@ -97,7 +176,11 @@ ul {
     padding: 200px 0;
     max-width: 1600px;
     height: 600px;
-    background-image: url(..//images/BgSt.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+     ),                     
+    url(..//images/BgSt.jpg);
     background-position: center;
     background-size: auto;
     margin: auto;
@@ -178,7 +261,8 @@ ul {
     flex-basis: calc((100% - 90px) / 3);
 }
 
-.title-secondary {
+.title-secondary,
+.clients-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -205,6 +289,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
+    background-color: var(--secondary-color);
 }
 .our-team {
     display: flex;
@@ -220,23 +305,109 @@ ul {
 .our-team .team-user-position {
     margin-bottom: 30px;
 }
+
+
+
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-fill);
+  }
+  .social-list {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+  }
+  .social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+  }
+  .social-list-link:hover,
+  .social-list-link:focus {
+    background-color: var(--accent-color);
+  }
+  .social-list-link:hover .social-list-icon,
+  .social-list-link:focus .social-list-icon {
+    fill: var(--secondary-color);
+  }
+  /*постоянные клиенты*/
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .clients-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-fill);
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .clients-list-link:hover,
+  .clients-list-link:focus {
+    border-color: var(--accent-color);
+  }
+  .clients-list-link:hover .clients-list-icon,
+  .clients-list-link:focus .clients-list-icon {
+    fill: var(--accent-color);
+  }
+  .clients-list-icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-fill);
+  }
+
+  .clients-section-secondary {
+      padding: 94px 15px;
+      width: 1200px;
+      margin: 0 auto;
+  }
+
                                               /*нижний колонтитул*/
 
 .footer {
   background-color: var(--fill-color);
   padding: 60px 0;
+  display: flex;
+}
+.footer-container {
+    display: flex;
+}
+.footer-address-container {
+    margin-right: 70px;
 }
 
-.address-item:not(:last-child) {
-    margin-bottom: 9px;
-}
+
 .title-address,
 .footer-logo { 
     color: var(--secondary-color);
 }
-.address {
-    margin-top: 20px;
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
 }
+.address-item {
+    font-style: normal;
+  }
 .bottom-link {
     color: var(--transparen-color);
 }
@@ -284,8 +455,44 @@ ul {
 .contacts-list .link:focus {
     color: var(--accent-color);
 }
-
-
+.footer-social-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.footeer-social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-fill);
+  }
+  .footeer-social-list {
+    display: flex;
+  }
+  .footeer-social-list-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .footeer-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+  .footeer-social-list-link:hover,
+  .footeer-social-list-link:focus {
+    background-color: var(--accent-color);
+  }
+  .footeer-social-list-link:hover .footeer-social-list-icon,
+  .footeer-social-list-link:focus .footeer-social-list-icon {
+    fill: var(--secondary-color);
+  }
 
                                     /*потфолио*/
 
@@ -334,8 +541,6 @@ ul {
 .portfolio-list-aytom:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-
-
 .card-content {
     border: 1px solid var( --one-time-color);
     border-top: none;
