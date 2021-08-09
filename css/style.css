@@ -52,7 +52,6 @@ ul {
 }
                                                     /*Шапка*/
 .header {
-    padding: 24px 0;
     border-bottom: 1px solid var( --one-time-color);
 }
 .header-container {
@@ -61,7 +60,8 @@ ul {
     justify-content: space-between;
 }
 .nav {
-    margin: 32px 0 32px 93px;
+    margin-left: 93px;
+    padding: 32px 0;
 }
 
 
@@ -81,20 +81,21 @@ ul {
 .contact-link {
     padding: 0;
     border: none;
+    display: flex;
+    align-items: center;
 }
-.iconsection-list-icon {
+.icon-section-list-icon {
     width: 70px;
     height: 70px;
-    fill: #afb1b8;
+    fill: var(--icon-fill);
 }
-.iconsection-list {
+.icon-section-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 94px;
     margin-bottom: 30px;
 }
-.iconsection-list-link {
+.icon-section-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,42 +105,6 @@ ul {
     box-sizing: border-box;
     border-radius: 4px;
 }
-
-
-
-/*.phon,
-.contact-link {
-    display: flex;
-    align-items: center;
-    color: currentColor;
-    text-decoration: none;
-    font-size: 32px;
-    background-size: contain;
-}
-.contact-link::before {
-    margin-right: 16px;
-    background-image:url(../svg/envelope.svg);
-    content: "";
-    width: 16px;
-    height: 12px;
-    
-}
-.phon::before {
-    margin-right: 16px;
-    background-image:url(../svg/Vector.svg);
-    content: "";
-    width: 10px;
-    height: 16px;  
-}
-*/
-
-
-
-
-
-
-
-
 .nav,
 .contacts-list,
 .nav-list {
@@ -183,7 +148,7 @@ ul {
     url(..//images/BgSt.jpg);
     background-position: center;
     background-size: auto;
-    margin: auto;
+    margin: 0 auto;
 }
 .main-title {
     color: var(--secondary-color);
@@ -227,7 +192,7 @@ ul {
     overflow: hidden;
 }
 .section-container {
-    padding: 47px 0 94px;
+    padding: 94px 0;
 }
 .quality-section {
     display: flex;
@@ -254,8 +219,10 @@ ul {
 .work-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
+}
+.section-container-class {
+    padding-bottom: 94px;
 }
 .work-list-item {
     flex-basis: calc((100% - 90px) / 3);
@@ -316,9 +283,7 @@ ul {
   }
   .social-list {
     display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 30px;
+    padding: 0 32px 30px 32px;
     justify-content: space-between;
   }
   .social-list-link {
@@ -439,7 +404,6 @@ ul {
     color: var(--accent-color);
 }
 .info-link{
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -456,7 +420,6 @@ ul {
     color: var(--accent-color);
 }
 .footer-social-title {
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -465,18 +428,18 @@ ul {
     color: var(--secondary-color);
     margin-bottom: 20px;
 }
-.footeer-social-list-icon {
+.footer-social-list-icon {
     width: 20px;
     height: 20px;
-    fill: var(--icon-fill);
+    fill: var(--secondary-color);
   }
-  .footeer-social-list {
+  .footer-social-list {
     display: flex;
   }
-  .footeer-social-list-item:not(:last-child) {
+  .footer-social-list-item:not(:last-child) {
     margin-right: 10px;
   }
-  .footeer-social-list-link {
+  .footer-social-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -485,12 +448,12 @@ ul {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
   }
-  .footeer-social-list-link:hover,
-  .footeer-social-list-link:focus {
+  .footer-social-list-link:hover,
+  .footer-social-list-link:focus {
     background-color: var(--accent-color);
   }
-  .footeer-social-list-link:hover .footeer-social-list-icon,
-  .footeer-social-list-link:focus .footeer-social-list-icon {
+  .footer-social-list-link:hover .footer-social-list-icon,
+  .footer-social-list-link:focus .footer-social-list-icon {
     fill: var(--secondary-color);
   }
 
@@ -524,7 +487,6 @@ ul {
     color: var(--secondary-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
                                         /*Портфолио*/
 .portfolio-list {
@@ -542,7 +504,7 @@ ul {
     margin-right: 30px;
 }
 .card-content {
-    border: 1px solid var( --one-time-color);
+    border: 1px solid var(--one-time-color);
     border-top: none;
     padding: 20px 24px;
 }
@@ -558,4 +520,8 @@ ul {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
+}
+.portfolio-list :hover,
+.portfolio-list :focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
