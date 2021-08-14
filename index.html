@@ -18,13 +18,13 @@
             <nav class="nav">
                 <ul class="nav-list list">
                     <li class="menu-item">
-                        <a class="active link" href="./index.html">Студия</a>
+                        <a class="menu-link active link" href="./index.html">Студия</a>
                     </li>
                     <li class="menu-item">
-                        <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+                        <a class="menu-link nav-link link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="menu-item">
-                        <a class="nav-link link" href="#">Контакты</a>
+                        <a class="menu-link nav-link link" href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -51,7 +51,7 @@
     <main>
         <section class="section-main">
                 <h1 class="main-title">Эффективные решения <br /> для вашего бизнеса</h1>
-                <button  type="button" class="primary-button">Заказать услугу</button>
+                <button  type="button" class="primary-button" data-modal-open>Заказать услугу</button>
         </section>
         <section class="section-container">
             <div class="container">
@@ -111,13 +111,22 @@
                 <h2 class="title-secondary">Чем мы занимаемся</h2>
                 <ul class="work-list list">
                     <li class="work-list-item">
+                      <div class="work-list-img">
                         <img src="./images/img1.jpg" alt="foto 1" width="370">
+                        <p class="work-overlay">Десктопные приложения</p>
+                      </div>  
                     </li>
                     <li class="work-list-item">
+                      <div class="work-list-img">
                         <img src="./images/img2.jpg" alt="foto 2" width="370">
+                        <p class="work-overlay">Мобильные приложения</p>
+                      </div>  
                     </li>
                     <li class="work-list-item">
+                      <div class="work-list-img">
                         <img src="./images/img3.jpg" alt="foto 3" width="370">
+                        <p class="work-overlay">Дизайнерские приложения</p>
+                      </div>
                     </li>
                 </ul>
             </div>
@@ -372,5 +381,28 @@
             </div>
         <div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-w-close">
+            <use href="./images/svg/close.svg#icon-close"></use>
+          </svg>
+        </button>        
+      </div>
+    </div>
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector('[data-modal-open]'),
+        closeModalBtn: document.querySelector('[data-modal-close]'),
+        modal: document.querySelector('[data-modal]'),
+      };
+    
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+    
+      function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+      }
+    </script>
 </body>
 </html>
