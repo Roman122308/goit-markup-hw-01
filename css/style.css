@@ -12,6 +12,8 @@
     --button-hover-focus: #188ce8;
     --one-time-color: #ececec;
     --icon-fill: #afb1b8;
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-start-time: 250ms;
 }
                                                             /*послядние изменения*/
 body {
@@ -75,6 +77,7 @@ ul {
     border: none;
     display: flex;
     align-items: center;
+    transition: color var(--transition-start-time) var(--cubic-bezier);
 }
 .icon-section-list-icon {
     width: 70px;
@@ -129,6 +132,7 @@ ul {
     position: relative;
     display: block;
     padding: 32px 0;
+    transition: color var(--transition-start-time) var(--cubic-bezier);
 }
 .menu-link.active::after {
     opacity: 1;
@@ -186,6 +190,7 @@ ul {
     letter-spacing: 0.06em;
     cursor: pointer;
     padding: 10px 32px;
+    transition: color var(--transition-start-time) var(--cubic-bezier);
 }
 .primary-button:hover,
 .primary-button:focus {
@@ -308,21 +313,18 @@ ul {
 .our-team .team-user-position {
     margin-bottom: 30px;
 }
-
-
-
-
 .social-list-icon {
     width: 20px;
     height: 20px;
     fill: var(--icon-fill);
-  }
-  .social-list {
+    transition: fill var(--transition-start-time) var(--cubic-bezier);
+}
+.social-list {
     display: flex;
     padding: 0 32px 30px 32px;
     justify-content: space-between;
-  }
-  .social-list-link {
+}
+.social-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,23 +332,23 @@ ul {
     height: 44px;
     background-color: var(--secondary-color);
     border-radius: 50%;
-  }
-  .social-list-link:hover,
-  .social-list-link:focus {
+    transition: background-color var(--transition-start-time) var(--cubic-bezier);
+}
+.social-list-link:hover,
+.social-list-link:focus {
     background-color: var(--accent-color);
-  }
-  .social-list-link:hover .social-list-icon,
-  .social-list-link:focus .social-list-icon {
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
     fill: var(--secondary-color);
-  }
-  /*постоянные клиенты*/
-  .clients-list {
+}
+                            /*постоянные клиенты*/
+.clients-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .clients-list-link {
+}
+.clients-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -355,26 +357,28 @@ ul {
     border: 1px solid var(--icon-fill);
     box-sizing: border-box;
     border-radius: 4px;
-  }
-  .clients-list-link:hover,
-  .clients-list-link:focus {
+    transition: border-color var(--transition-start-time) var(--cubic-bezier);
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
     border-color: var(--accent-color);
-  }
-  .clients-list-link:hover .clients-list-icon,
-  .clients-list-link:focus .clients-list-icon {
+}
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
     fill: var(--accent-color);
-  }
-  .clients-list-icon {
+}
+.clients-list-icon {
     width: 106px;
     height: 60px;
     fill: var(--icon-fill);
-  }
+    transition: fill var(--transition-start-time) var(--cubic-bezier);
+}
 
-  .clients-section-secondary {
+.clients-section-secondary {
       padding: 94px 15px;
       width: 1200px;
       margin: 0 auto;
-  }
+}
 
                                               /*нижний колонтитул*/
 
@@ -389,8 +393,6 @@ ul {
 .footer-address-container {
     margin-right: 70px;
 }
-
-
 .title-address,
 .footer-logo { 
     color: var(--secondary-color);
@@ -402,13 +404,13 @@ ul {
     line-height: 1.2;
     margin-bottom: 20px;
     display: inline-block;
-  }
+}
 .address-item:not(:last-child) {
     margin-bottom: 9px;
 }
 .address-item {
     font-style: normal;
-  }
+}
 .bottom-link {
     color: var(--transparen-color);
 }
@@ -472,14 +474,15 @@ ul {
     width: 20px;
     height: 20px;
     fill: var(--secondary-color);
-  }
-  .footer-social-list {
+    transition: fill var(--transition-start-time) var(--cubic-bezier);
+}
+.footer-social-list {
     display: flex;
-  }
-  .footer-social-list-item:not(:last-child) {
+}
+.footer-social-list-item:not(:last-child) {
     margin-right: 10px;
-  }
-  .footer-social-list-link {
+}
+.footer-social-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -487,15 +490,16 @@ ul {
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-  }
-  .footer-social-list-link:hover,
-  .footer-social-list-link:focus {
+    transition: background-color var(--transition-start-time) var(--cubic-bezier);
+}
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
     background-color: var(--accent-color);
-  }
-  .footer-social-list-link:hover .footer-social-list-icon,
-  .footer-social-list-link:focus .footer-social-list-icon {
+}
+.footer-social-list-link:hover .footer-social-list-icon,
+.footer-social-list-link:focus .footer-social-list-icon {
     fill: var(--secondary-color);
-  }
+}
 
                                     /*потфолио*/
 
@@ -521,6 +525,9 @@ ul {
     padding: 6px 22px;
     border: 0;
     letter-spacing: 0.06em;
+    transition: background-color var(--transition-start-time) var(--cubic-bezier),
+                color var(--transition-start-time) var(--cubic-bezier),
+                box-shadow var(--transition-start-time) var(--cubic-bezier);
 }
 .secondary-button:hover,
 .secondary-button:focus {
@@ -535,6 +542,7 @@ ul {
 }
 .portfolio-list-aytom {
     background: var(--secondary-color);
+    transition: box-shadow var(--transition-start-time) var(--cubic-bezier);
 }
 
 .portfolio-list-aytom:not(:nth-child(-n+3)) {
@@ -581,13 +589,14 @@ ul {
     letter-spacing: 0.03em;
     padding: 63px 20px;
     transform: translateY(100%);
-  }
+    transition: transform var(--transition-start-time) var(--cubic-bezier);
+}
   
-  .portfolio-link:hover .overlay,
-  .portfolio-link:focus .overlay {
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
     transform: translateY(0%);
-  }
-/*модельное окно*/
+}
+                    /*модельное окно*/
 .backdrop {
     position: fixed;
     top: 0;
@@ -596,6 +605,7 @@ ul {
     height: 100vh;
     background: rgba(0, 0, 0, 0.2);
     z-index: 100;
+    transition: visibility var(--transition-start-time) var(--cubic-bezier);
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -628,11 +638,12 @@ ul {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-  }
-  .modal-w-close {
+    transition: fill var(--transition-start-time) var(--cubic-bezier);
+}
+.modal-w-close {
     width: 18px;
     height: 18px;
-  }
-  .modal-close-btn:hover {
+}
+.modal-close-btn:hover {
     fill: var(--accent-color);
-  }
+}
