@@ -434,6 +434,67 @@ ul {
 .bottom-address {
     font-style:normal;
 }
+.footer-social-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.footer-form-message {
+    width: 358px;
+    padding: 15px 16px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--secondary-color);
+    margin-right: 12px;
+}
+.footer-form-message::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-form-btn {
+  align-self: center;
+  border-radius: 4px;
+  border: 0;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  padding: 10px 29px;
+  transition: background-color var(--transition-start-time) var(--cubic-bezier),
+            color var(--transition-start-time) var(--cubic-bezier);
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer-form-btn::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-size: contain;
+}
+.footer-social:not(:last-child) {
+    margin-right: 93px;
+}
+
                     /*шапка*/
 .info-link:hover,
 .info-link:focus {
@@ -653,3 +714,125 @@ ul {
 .modal-close-btn:hover {
     fill: var(--accent-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-form-head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--title-text-color);
+    margin-bottom: 12px;
+  }
+  .modal-form-field {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+  .modal-form-textarea {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+  .modal-form-input-wrapper {
+    position: relative;
+    display: block;
+    margin-top: 4px;
+  }
+  .modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+  }
+  .modal-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+  }
+  .modal-form-input:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+  .modal-form-input:focus + .modal-form-icon {
+    fill: var(--accent-color);
+  }
+  .modal-form-message {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+    margin-top: 4px;
+  }
+  .modal-form-message::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .modal-form-message:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+  .modal-form-checkbox-policy::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .modal-form-checkbox:focus + .modal-form-checkbox-policy::before,
+  .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
+    background-image: url(../images/svg/Vector.svg);
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+  }
+  .modal-form-checkbox-policy {
+    font-size: 14px;
+    line-height: 1.71px;
+    color: var(--primary-text-color);
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .modal-form-btn {
+    color: var(--title-text-color);
+    padding: 10px 32px;
+    margin-top: 30px;
+  }
+  .modal-form-btn:hover,
+  .modal-form-btn:focus {
+    background-color: var(--button-hover-focus);
+    color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  .modal-form-policy-link {
+    color: var(--button-hover-focus);
+  }

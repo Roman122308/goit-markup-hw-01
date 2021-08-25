@@ -379,6 +379,17 @@
                 </li>
                 </ul>
             </div>
+            <form class="footer-form">
+              <h2 class="footer-social-title">Подпишитесь на рассылку</h2>
+              <label class="footer-form-field"
+                ><input
+                  type="email"
+                  name="user-mail"
+                  class="footer-form-message"
+                  placeholder="E-mail"
+                  required /></label
+              ><button type="submit" class="footer-form-btn">Подписаться</button>
+            </form>
         <div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -387,7 +398,60 @@
           <svg class="modal-w-close">
             <use href="./images/svg/close.svg#icon-close"></use>
           </svg>
-        </button>        
+        </button>
+        <form class="modal-form">
+          <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="modal-form-field">
+            <p>Имя</p>
+            <div class="modal-form-input-wrapper">
+              <input type="text" name="user-name" class="modal-form-input" minlength="2" />
+              <svg class="modal-form-icon">
+                <use href="./images/svg/icon.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-form-field">
+            <p>Телефон</p>
+            <div class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user-phone"
+                class="modal-form-input"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="097-777-77-77"
+              />
+              <svg class="modal-form-icon">
+                <use href="./images/svg/icon.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-form-field">
+            <p>Почта</p>
+            <div class="modal-form-input-wrapper">
+              <input type="email" name="user-mail" class="modal-form-input" required />
+              <svg class="modal-form-icon">
+                <use href="./images/svg/icon.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-form-textarea">
+            <p>Комментарий</p>
+            <textarea name="user-message" class="modal-form-message" placeholder="Введите текст">
+            </textarea>
+          </label>
+          <input
+            type="checkbox"
+            name="user-policy"
+            class="modal-form-checkbox visually-hidden"
+            id="checkbox-policy"
+          />
+          <label for="checkbox-policy" class="modal-form-checkbox-policy">
+            Соглашаюсь с рассылкой и принимаю
+            <a class="modal-form-policy-link" href="">Условия договора</a>
+          </label>
+          <button type="submit" class="modal-form-btn">Отправить</button>
+        </form>        
       </div>
     </div>
     <script>
