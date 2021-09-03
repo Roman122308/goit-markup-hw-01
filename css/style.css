@@ -686,6 +686,7 @@ ul {
     justify-content: center;
     align-items: center;
     position: absolute;
+    color: rgba(0, 0, 0, 0.08);
     top: 8px;
     right: 8px;
     width: 30px;
