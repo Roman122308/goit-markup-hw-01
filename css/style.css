@@ -14,7 +14,7 @@
     --one-time-color: #ececec;
     --icon-fill: #afb1b8;
     --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-start-time: 2500ms;
+    --transition-start-time: 250ms;
 }
 /*послядние изменения*/
 body {
