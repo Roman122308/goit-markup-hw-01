@@ -14,7 +14,7 @@
     --one-time-color: #ececec;
     --icon-fill: #afb1b8;
     --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-start-time: 250ms;
+    --transition-start-time: 2500ms;
 }
 /*послядние изменения*/
 body {
@@ -660,7 +660,7 @@ ul {
     height: 100vh;
     background: rgba(0, 0, 0, 0.2);
     z-index: 100;
-    transition: visibility var(--transition-start-time) var(--cubic-bezier);
+    transition: opacity var(--transition-start-time) var(--cubic-bezier);
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -739,6 +739,7 @@ ul {
     transform: translateY(-50%);
     width: 18px;
     height: 18px;
+    transition: fill var(--transition-start-time) var(--cubic-bezier);
 }
 .modal-form-input {
     width: 100%;
@@ -789,7 +790,6 @@ ul {
     vertical-align: middle;
     width: 16px;
     height: 15px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
     margin-right: 7px;
